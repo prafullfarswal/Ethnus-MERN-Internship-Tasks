@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1 style="color: blue; text-align: center;">Registration form</h1>
+    <form style="width: 600px; margin: 0 auto;">
+        <table style="width: 100%; border-collapse: collapse; border: 1px solid black;">
+            <tr>
+                <td style="padding: 8px; border: 1px solid black;">First Name</td>
+                <td style="padding: 8px; border: 1px solid black;"><input type="text" style="width: 90%; padding: 5px;"></td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid black;">Last Name</td>
+                <td style="padding: 8px; border: 1px solid black;"><input type="text" style="width: 90%; padding: 5px;"></td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid black;">Email</td>
+                <td style="padding: 8px; border: 1px solid black;"><input type="email" style="width: 90%; padding: 5px;"></td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid black;">Password</td>
+                <td style="padding: 8px; border: 1px solid black;"><input type="password" style="width: 90%; padding: 5px;"></td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid black;">Re-enter Password</td>
+                <td style="padding: 8px; border: 1px solid black;"><input type="password" style="width: 90%; padding: 5px;"></td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid black;">Gender:</td>
+                <td style="padding: 8px; border: 1px solid black;">
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid black;">Age:</td>
+                <td style="padding: 8px; border: 1px solid black;"><input type="text" style="width: 90%; padding: 5px;"></td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid black;">Phone Number</td>
+                <td style="padding: 8px; border: 1px solid black;"><input type="text" style="width: 90%; padding: 5px;"></td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid black;">Address</td>
+                <td style="padding: 8px; border: 1px solid black;"><textarea style="width: 90%; height: 100px; padding: 5px;"></textarea></td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid black;">State</td>
+                <td style="padding: 8px; border: 1px solid black;"><input type="text" style="width: 90%; padding: 5px;"></td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid black;">Country</td>
+                <td style="padding: 8px; border: 1px solid black;">
+                    <select style="width: 100%; padding: 5px;">
+                        <option value="">Choose your country</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid black;">Languages known</td>
+                <td style="padding: 8px; border: 1px solid black;">
+                    <input type="checkbox" name="lang" value="english"> English
+                    <input type="checkbox" name="lang" value="kannada"> Kannada
+                    <input type="checkbox" name="lang" value="hindi"> Hindi
+                    <input type="checkbox" name="lang" value="telugu"> Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 8px; border: 1px solid black;">
+                    <input type="checkbox" checked> Hereby I declare all the given details are true
+                </td>
+            </tr>
+        </table>
+        <div style="text-align: right; margin-top: 10px;">
+            Log in to <a href="#" style="color: blue; text-decoration: underline;">Ethnus</a> website
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button type="submit" style="padding: 5px 20px;">Register</button>
+        </div>
+    </form>
+</body>
+</html>
