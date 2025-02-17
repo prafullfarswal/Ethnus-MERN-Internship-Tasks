@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Form</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: #f8f9fa;
+                padding: 20px;
+            }
+
+            .form-container {
+                max-width: 500px;
+                margin: 0 auto;
+                background-color: white;
+                padding: 30px;
+                border-radius: 4px;
+            }
+
+            .form-label {
+                font-weight: 500;
+                color: #212529;
+            }
+
+            .form-control {
+                border-color: #dee2e6;
+            }
+
+            .form-control:focus {
+                border-color: #dc3545;
+                box-shadow: none;
+            }
+
+            .invalid-feedback {
+                color: #dc3545;
+                font-size: 0.875em;
+            }
+
+            .btn-submit {
+                background-color: #dc3545;
+                border: none;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .btn-submit:hover {
+                background-color: #c82333;
+            }
+
+            .form-select {
+                border-color: #dee2e6;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="form-container">
+            <form class="needs-validation" novalidate>
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                    <div class="invalid-feedback">
+                        Name is required
+                    </div>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">
+                        Email is required
+                    </div>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" required>
+                    <div class="invalid-feedback">
+                        Password is required
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="hobbies" class="form-label">Hobbies</label>
+                    <select class="form-select" id="hobbies">
+                        <option selected>Select a hobby</option>
+                        <option value="1">Reading</option>
+                        <option value="2">Gaming</option>
+                        <option value="3">Sports</option>
+                        <option value="4">Music</option>
+                        <option value="5">Art</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-submit text-white">Submit</button>
+            </form>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+        <script>
+
+            (function () {
+                'use strict'
+                var forms = document.querySelectorAll('.needs-validation')
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })()
+        </script>
+    </body>
+
+</html>
