@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Styled Page</title>
+        <style>
+            body {
+                font-family: serif;
+                background-color: #d4cc3b;
+                /* Yellowish background */
+                margin: 40px;
+                padding: 20px;
+                border: 2px dotted gray;
+            }
+
+            h1 {
+                color: purple;
+                font-size: 32px;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            i {
+                font-size: 14px;
+            }
+
+            .sidebar {
+                width: 180px;
+                float: left;
+            }
+
+            .sidebar a {
+                display: block;
+                width: 150px;
+                padding: 5px;
+                margin-bottom: 10px;
+                text-decoration: none;
+                color: blue;
+                background-color: white;
+                border-left: 10px solid black;
+                font-weight: bold;
+            }
+
+            .sidebar a:hover {
+                background-color: lightgray;
+            }
+
+            .content {
+                margin-left: 200px;
+            }
+
+            .separator {
+                border-top: 1px dotted black;
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="sidebar">
+            <a href="#">Home page</a>
+            <a href="#">Musings</a>
+            <a href="#">My town</a>
+            <a href="#">Links</a>
+        </div>
+
+        <div class="content">
+            <h1>My first styled page</h1>
+            <p>Welcome to my styled page!</p>
+            <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+            <p>There should be more here, but I don't know what yet.</p>
+
+            <div class="separator"></div>
+
+            <p><i>Made 5 April 2004 by myself.</i></p>
+        </div>
+
+    </body>
+
+</html>
